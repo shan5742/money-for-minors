@@ -16,7 +16,7 @@ export const ContactPage = (props: Props) => {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          action="/thank-you"
+          action="/thanks"
         >
           <div className={s.formRow}>
             <input
