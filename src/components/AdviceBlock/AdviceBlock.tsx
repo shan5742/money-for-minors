@@ -14,7 +14,7 @@ export const AdviceBlock = ({ heading, advice, parents }: Props) => {
       <p className={s.advice}>{advice}</p>
       {parents && (
         <p className={s.parents}>
-          <span className="bold">Parents: </span>
+          Parents:
           {parents}
         </p>
       )}

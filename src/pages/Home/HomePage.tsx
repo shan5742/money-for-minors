@@ -23,7 +23,7 @@ export const HomePage = (props: Props) => {
 
   const onSeeMore = () => {
     setData(
-      FinancialTips.sort(() => Math.random() - Math.random()).slice(0, 5)
+      FinancialTips.sort(() => Math.random() - Math.random()).slice(0, 3)
     );
   };
   return (

@@ -11,6 +11,10 @@
 
 .logo {
   @include font-scale("crazy", bold);
+
+  @media (max-width: 700px) {
+    @include font-scale("super", bold);
+  }
 }
 
 .nav {
@@ -20,6 +24,10 @@
 
     li {
       margin: 0 $x2;
+
+      @media (max-width: 700px) {
+        margin: 0 $x1;
+      }
 
       a {
         text-decoration: none;
