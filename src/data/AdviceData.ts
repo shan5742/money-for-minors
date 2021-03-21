@@ -11,41 +11,55 @@ export const FinancialTips = [
   },
   {
     id: uuidv4(),
-    heading: "A heading",
-    advice: "Advice here",
-    parents: "Advice for parents",
-  },
-  {
-    id: uuidv4(),
-    heading: "A heading",
-    advice: "Advice here",
-    parents: "Advice for parents",
-  },
-  {
-    id: uuidv4(),
-    heading: "It's good to talk",
+    heading: "Compound interest is a thing - Start early",
     advice:
-      "I know is old folk aren't as smart as we like to think we are, but when it comes to finance, money, investing and everything in between the majority of us have learnt a thing or two over the years (usually from our mistakes). So speak to your parents about money. Parents love giving advice, so use that to your advantage here.",
-    parents:
-      "Encourage your kids to talk about money and be receptive if they broach the subject with you. You don't have to go into the ins and outs of your finances. Just talk about saving, budgeting, credit scores etc",
+      "The sooner you start saving, investing or anything really the better. What seems like very little in the short term can equate to a tidy sum of money in the long term. Read up on compound interest and let your money work for you.",
   },
   {
     id: uuidv4(),
-    heading: "A heading",
-    advice: "Advice here",
+    heading: "Credit - The good, The Bad & The ugly",
+    advice:
+      "Credit is something young people are often steered away from, which is not terrible advice. If you don't borrow you can't get into trouble. However it is also true that credit makes the world go round. Want to buy a house? You'll need good credit, want to buy a car? - ditto. Building up a strong credit score is vital to leverage the most competitive rates when you do need to borrow. SO don't shy away from credit when the time comes. Start small, make sure it is affordable and watch your score shoot up.",
     parents: "Advice for parents",
   },
   {
     id: uuidv4(),
-    heading: "It's good to talk",
+    heading: "Budgeting",
     advice:
-      "I know is old folk aren't as smart as we like to think we are, but when it comes to finance, money, investing and everything in between the majority of us have learnt a thing or two over the years (usually from our mistakes). So speak to your parents about money. Parents love giving advice, so use that to your advantage here.",
+      "If you want to stay on top of your finances budgeting is a must. How do you know you are overreaching if you don't know your outgoings? the answer is you don't. A really simple budget of income and expenditure is an amazing tool, which can then highlight areas to cut back, room for savings and much more.",
     parents:
-      "Encourage your kids to talk about money and be receptive if they broach the subject with you. You don't have to go into the ins and outs of your finances. Just talk about saving, budgeting, credit scores etc",
+      "Show your kids your budget and help them create one of their own. Some financial incentive or £££ matched could work wonders here.",
   },
   {
     id: uuidv4(),
-    heading: "A heading",
-    advice: "Advice here",
+    heading: "Pensions",
+    advice:
+      "Do you really want to be working every day when you're 80/90/100 years old? Nah, I didn't think so. Planning for retirement seems boring and unnecessary when you're just a nipper, but like most things in the financial world the sooner you start the better. Remember our old friend compound interest? Well he comes into play again here, the earlier you are saving the more your interest will build. Employees and the government will also likely match a % of your salary - aka FREE MONEY - so get on that ASAP.",
+    parents:
+      "Show your kids your pension pot, so they can see how it grows over the years. Get them an appointment with a financial advisor/bank to introduce them to the various options they have available.",
+  },
+  {
+    id: uuidv4(),
+    heading: "Investing - You are not Warren Buffet...",
+    advice:
+      "Investing is like the wild west, picking out unique stocks and watching your money 100x is a pipe dream. Can it be done? Sure, with a shit load of research and knowledge, but the reality is not many of us have those skills. Still want to invest? Great, look into index funds, over the long term they almost always show a decent return, beating the interest rate and there are many places you can now start investing with super small amounts with little to no fees",
+    parents:
+      "Investing can very quickly become gambling, if your kids come to you talking about investing their money that is a good thing. However be sure to talk to them about risk, being in it for the long term and help them get solid advice.",
+  },
+  {
+    id: uuidv4(),
+    heading: "You need an emergency fund",
+    advice:
+      "Before looking to invest your hard earned cash or splash out on any luxury purchases you should build an emergency fund, which is a pot of money that you aim not to spend unless you have to. A good rule of thumb to aim for is 1 months wages or a couple of months of expenses. This can bail you out for things like care repairs or any other unexpected expense that isn't in your budget. Just remember to replenish it when you do have to dip into it.",
+    parents:
+      "Teach your kids about an emergency fund, if you don't you likely will become there emergency fund!",
+  },
+  {
+    id: uuidv4(),
+    heading: "Track your spending",
+    advice:
+      "Money, cash especially is so easy to spend. If you're not careful you will just blast through all of your funds and be left short on pay day. A great way to review your spending habits and prepare for budget planning is to track your spending. This can be done in many ways, write stuff down on pen and paper, notes app on your phone or a more sophisticated app - the choice is yours.",
+    parents:
+      "Teach your kids about an emergency fund, if you don't you likely will become there emergency fund!",
   },
 ];
