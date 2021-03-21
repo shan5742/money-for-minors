@@ -69,3 +69,9 @@
     }
   }
 }
+
+.success {
+  @include font-scale(base, bold);
+  color: $green;
+  text-align: center;
+}

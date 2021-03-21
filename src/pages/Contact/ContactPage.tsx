@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "../../components/Button/Button";
 import { StandardLayout } from "../../layouts/StandardLayout/StandardLayout";
 import s from "./ContactPage.module.scss";
@@ -6,17 +6,24 @@ import s from "./ContactPage.module.scss";
 interface Props {}
 
 export const ContactPage = (props: Props) => {
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if (window.location.search.includes("success=true")) {
+      setSuccess(true);
+    }
+  }, []);
   return (
     <StandardLayout>
       <h1 className={s.pageTitle}>Get in touch</h1>
+      {success && <p className={s.success}>Thanks for your message</p>}
       <div className={s.wrapper}>
         <form
           className={s.form}
           name="contact"
           method="POST"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          action="/thanks"
+          action="/contact/?success=true"
         >
           <input type="hidden" name="contact" value="contact" />
           <div className={s.formRow}>
