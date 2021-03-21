@@ -12,6 +12,9 @@ export const PageRouter = () => {
       <Route path="/contact">
         <ContactPage />
       </Route>
+      <Route path="/thanks">
+        <h1>weeeeee</h1>
+      </Route>
       <Route path="/">
         <HomePage />
       </Route>
