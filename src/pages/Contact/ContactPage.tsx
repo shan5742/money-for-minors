@@ -18,6 +18,7 @@ export const ContactPage = (props: Props) => {
           data-netlify-honeypot="bot-field"
           action="/thanks"
         >
+          <input type="hidden" name="contact" value="contact" />
           <div className={s.formRow}>
             <input
               className={s.input}
