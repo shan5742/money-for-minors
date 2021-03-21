@@ -1,7 +1,7 @@
 # Money for Minors
 
 ```
-**DISCLAIMER**: We are not financial advisors
+DISCLAIMER: We are not financial advisors
 ```
 
 Money for minors is a simple information website aimed at informing young people about finance and money management. This is **NOT** a financial advice website in the sense of offering investment opportunities/products or anything like that. We are absolutely not qualified to do that.
