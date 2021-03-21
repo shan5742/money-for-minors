@@ -1,4 +1,5 @@
 import React, { HTMLProps } from "react";
+import { Footer } from "../../components/Footer/Footer";
 import { Header } from "../../components/Header/Header";
 import s from "./StandardLayout.module.scss";
 
@@ -9,6 +10,7 @@ export const StandardLayout = ({ children }: PropsT) => {
     <div className={s.root}>
       <Header />
       <div className={s.content}>{children}</div>
+      <Footer />
     </div>
   );
 };

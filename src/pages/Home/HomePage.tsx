@@ -29,9 +29,7 @@ export const HomePage = (props: Props) => {
   return (
     <StandardLayout>
       <h1 className={s.pageTitle}>No frills money advice for youngens </h1>
-      <div className={s.topButtonWrapper}>
-        <Button onClick={onSeeMore} text="CLICK FOR MOAR" />
-      </div>
+
       <div className={s.adviceBlock}>
         {data.map((advice) => (
           <AdviceBlock

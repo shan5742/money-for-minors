@@ -19,8 +19,7 @@ export const FinancialTips = [
     id: uuidv4(),
     heading: "Credit - The good, The Bad & The ugly",
     advice:
-      "Credit is something young people are often steered away from, which is not terrible advice. If you don't borrow you can't get into trouble. However it is also true that credit makes the world go round. Want to buy a house? You'll need good credit, want to buy a car? - ditto. Building up a strong credit score is vital to leverage the most competitive rates when you do need to borrow. SO don't shy away from credit when the time comes. Start small, make sure it is affordable and watch your score shoot up.",
-    parents: "Advice for parents",
+      "Credit is something young people are often steered away from, which is not terrible advice. If you don't borrow you can't get into trouble. However it is also true that credit makes the world go round. Want to buy a house? You'll need good credit, want to buy a car? - ditto. Building up a strong credit score is vital to leverage the most competitive rates when you do need to borrow. So don't shy away from credit when the time comes. Start small, make sure it is affordable and watch your score shoot up.",
   },
   {
     id: uuidv4(),
@@ -61,5 +60,23 @@ export const FinancialTips = [
       "Money, cash especially is so easy to spend. If you're not careful you will just blast through all of your funds and be left short on pay day. A great way to review your spending habits and prepare for budget planning is to track your spending. This can be done in many ways, write stuff down on pen and paper, notes app on your phone or a more sophisticated app - the choice is yours.",
     parents:
       "Teach your kids about an emergency fund, if you don't you likely will become there emergency fund!",
+  },
+  {
+    id: uuidv4(),
+    heading: "Being cheap is not always the answer",
+    advice:
+      "Being frugal and smart with your money is almost always a good thing. However people can take it too far and being too cheap can result in a lot of missed opportunities. Spending money on the right tools, software, advice etc can pay for themselves and then some!",
+  },
+  {
+    id: uuidv4(),
+    heading: "Beware of the minimum payment trap",
+    advice:
+      "At some point you will look to get a credit card to increase your credit rating and build a nice profile. This is smart. However be aware then when your statement comes in that the minimum payment is almost entirely just the interest incurred. In other words you are paying a fee for the borrowing but not reducing your debt much at all. This is bad. Pro tip, take out a credit card, pay for your shopping, petrol, mobile or whatever each month and clear the entire balance every month. This way you are building upi your credit score without paying a penny in interest - win win.",
+  },
+  {
+    id: uuidv4(),
+    heading: "Don't live beyond your means",
+    advice:
+      "You may well have built up a half decent credit score and now have lots of options for borrowing, you see a nice car you want and buy it when you can't really afford the payments. Now I don't mean you literally can't afford it, that would just be silly (don't do that)! But just because you have the money for the monthly payments doesn't mean you can afford it. You may have to sacrifice topping up your emergency fund, scaling back on savings and/or investments etc. This is not smart and will cost you a lot in the long term.",
   },
 ];

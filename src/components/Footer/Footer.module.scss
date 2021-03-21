@@ -1,0 +1,29 @@
+@import "../../styles/global.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: $x2;
+  align-items: center;
+  @include font-scale(base);
+  background-color: $blue;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.coffee {
+  display: flex;
+  align-items: center;
+}
+
+.footerLink {
+  text-decoration: none;
+  @include font-scale(base, bold);
+  color: $red;
+
+  &:hover {
+    color: $orange;
+  }
+}
