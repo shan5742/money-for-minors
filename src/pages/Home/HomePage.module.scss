@@ -1,0 +1,28 @@
+@import "../../styles/global.scss";
+
+.pageTitle {
+  @include font-scale("super", bold);
+  font-style: italic;
+  text-align: center;
+  padding: $x4 0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.topButtonWrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: $x4;
+}
+
+.bottomButtonWrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: $x4;
+}
+
+.adviceBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

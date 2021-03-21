@@ -1,3 +1,5 @@
+@import "~sass-rem";
+
 //Size units
 
 $size-unit: 8px;
@@ -18,27 +20,163 @@ $space-huge: $size-unit * 8;
 // Colours
 
 $white: #ffffff;
-$black: #222222;
-$green: #a3e636;
-$pink: #fda4af;
-$purple: #d8b4fe;
-$yellow: #ffc234;
-$orange: #ff9c00;
-$red: #ff434f;
-$light-green: #6fcaa8;
-$dark-green: #36ab80;
-$dark-purple: #382f78;
-$blue: #00c4d6;
-$cream: #f3eeee;
-$light-text-colour: #837e7e;
-$text-colour: #4e4646;
-$black-700: #403939;
+$black: #000000;
+$blue: #2d4059;
+$red: #ea5455;
+$yellow: #ffd460;
+$orange: #f07b3f;
+$text-colour: $black;
 
+// box-shadow
+
+$shadow: 12px 8px 0px 1px $black;
+
+// border
+
+$border: 3px solid $black;
+
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+$font-default-values: (
+  stack: $font-family,
+  x-small: (
+    font-size: 10px,
+    line-height: 16px,
+    text-transform: uppercase,
+    letter-spacing: 1px,
+  ),
+  small: (
+    font-size: 12px,
+    line-height: 18px,
+  ),
+  base: (
+    font-size: 17px,
+    line-height: 24px,
+  ),
+  mid: (
+    font-size: 20px,
+    line-height: 28px,
+  ),
+  mid-large: (
+    font-size: 24px,
+    line-height: 28px,
+  ),
+  large: (
+    font-size: 28px,
+    line-height: 34px,
+  ),
+  x-large: (
+    font-size: 36px,
+    line-height: 40px,
+  ),
+  super: (
+    font-size: 56px,
+    line-height: 70px,
+  ),
+  crazy: (
+    font-size: 72px,
+    line-height: 72px,
+  ),
+);
+
+$weights: (
+  normal: 400,
+  medium: 600,
+  bold: 800,
+);
+
+@function _fontset-feature($set, $feature) {
+  $result: map-get(map-get($font-default-values, $set), $feature);
+  @return $result;
+}
+
+@function get-font-size($set) {
+  @return _fontset-feature($set, font-size);
+}
+
+@function get-line-height($set) {
+  @return _fontset-feature($set, line-height);
+}
+
+@mixin font-scale($font-size: "base", $font-weight: "normal") {
+  @if (map-has-key($map: $font-default-values, $key: $font-size) != true) {
+    @error ("could not find given font size: #{$font-size}");
+  }
+  @if (map-has-key($map: $weights, $key: $font-weight) != true) {
+    @error ("could not find given font weight: #{$font-weight}");
+  }
+  @each $property, $value in map-get($font-default-values, $font-size) {
+    #{$property}: $value;
+  }
+  font-size: var(--fs-#{$font-size}, rem(get-font-size($font-size)));
+  line-height: var(--lh-#{$font-size}, rem(get-line-height($font-size)));
+  font-weight: map-get($weights, $font-weight);
+}
+
+@mixin font-weight($font-weight: "normal") {
+  @if (map-has-key($map: $weights, $key: $font-weight) != true) {
+    @error ("could not find given font weight: #{$font-weight}");
+  }
+  font-weight: map-get($weights, $font-weight);
+}
+
+@mixin desktopTypeVariables {
+  --fs-x-small: #{rem(get-font-size(x-small))};
+  --lh-x-small: #{rem(get-line-height(x-small))};
+  --fs-small: #{rem(get-font-size(small))};
+  --lh-small: #{rem(get-line-height(small))};
+  --fs-base: #{rem(get-font-size(base))};
+  --lh-base: #{rem(get-line-height(base))};
+  --fs-mid: #{rem(get-font-size(mid))};
+  --lh-mid: #{rem(get-line-height(mid))};
+  --fs-mid-large: #{rem(get-font-size(mid-large))};
+  --lh-mid-large: #{rem(get-line-height(mid-large))};
+  --fs-large: #{rem(get-font-size(large))};
+  --lh-large: #{rem(get-line-height(large))};
+  --fs-x-large: #{rem(get-font-size(x-large))};
+  --lh-x-large: #{rem(get-line-height(x-large))};
+  --fs-super: #{rem(get-font-size(super))};
+  --lh-super: #{rem(get-line-height(super))};
+  --fs-crazy: #{rem(get-font-size(crazy))};
+  --lh-crazy: #{rem(get-line-height(crazy))};
+}
+
+@mixin mobileTypeVariables {
+  --fs-x-small: #{rem(10px)};
+  --lh-x-small: #{rem(16px)};
+  --fs-small: #{rem(12px)};
+  --lh-small: #{rem(18px)};
+  --fs-base: #{rem(15px)};
+  --lh-base: #{rem(24px)};
+  --fs-mid: #{rem(20px)};
+  --lh-mid: #{rem(24px)};
+  --fs-mid-large: #{rem(24px)};
+  --lh-mid-large: #{rem(28px)};
+  --fs-large: #{rem(28px)};
+  --lh-large: #{rem(30px)};
+  --fs-x-large: #{rem(36px)};
+  --lh-x-large: #{rem(36px)};
+  --fs-super: #{rem(56px)};
+  --lh-super: #{rem(70px)};
+  --fs-crazy: #{rem(72px)};
+  --lh-crazy: #{rem(72px)};
+}
+
+html,
 body {
+  height: 100%;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: $font-family;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  @include desktopTypeVariables();
+}
+
+input,
+button {
+  font-family: $font-family;
 }

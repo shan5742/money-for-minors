@@ -1,0 +1,13 @@
+@import "../../styles/global.scss";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1;
+  background-color: $blue;
+  padding: 0 $x4 $x4 $x4;
+}

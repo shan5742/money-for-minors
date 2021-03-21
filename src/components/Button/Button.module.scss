@@ -1,0 +1,14 @@
+@import "../../styles/global.scss";
+
+.button {
+  background-color: $yellow;
+  box-shadow: $shadow;
+  border: $border;
+  padding: $x2 $x4;
+  @include font-scale("large", bold);
+  cursor: pointer;
+
+  &:hover {
+    background-color: $orange;
+  }
+}

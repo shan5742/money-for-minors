@@ -1,0 +1,15 @@
+@import "../../styles/global.scss";
+
+.container {
+  background-color: $red;
+  padding: $x2 $x8;
+  width: 80%;
+  max-width: 700px;
+  margin: $x4 auto;
+  border: $border;
+  box-shadow: $shadow;
+
+  &:hover {
+    background-color: $yellow;
+  }
+}
