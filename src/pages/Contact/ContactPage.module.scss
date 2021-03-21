@@ -1,0 +1,71 @@
+@import "../../styles/global";
+
+.pageTitle {
+  @include font-scale("super", bold);
+  font-style: italic;
+  text-align: center;
+  padding: $x4 0;
+  margin: auto;
+
+  @media (max-width: 700px) {
+    @include font-scale("large", bold);
+  }
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .formRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $x2 0;
+
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+
+    .input {
+      width: 40%;
+      border: $border;
+      padding: $x2;
+      box-shadow: $shadow;
+      color: $text-colour;
+      @include font-scale(base);
+
+      &::placeholder {
+        color: $text-colour;
+        @include font-scale(base);
+      }
+
+      @media (max-width: 650px) {
+        width: 90%;
+        margin: $x1 0;
+      }
+    }
+
+    .textarea {
+      width: 100%;
+      border: $border;
+      box-shadow: $shadow;
+      padding: $x2;
+      color: $text-colour;
+      @include font-scale(base);
+
+      &::placeholder {
+        color: $text-colour;
+        @include font-scale(base);
+      }
+
+      @media (max-width: 650px) {
+        width: 90%;
+      }
+    }
+  }
+}

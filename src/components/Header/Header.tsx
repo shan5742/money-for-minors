@@ -7,7 +7,9 @@ interface Props {}
 export const Header = (props: Props) => {
   return (
     <div className={s.header}>
-      <div className={s.logo}>🤑</div>
+      <div className={s.logo}>
+        <Link to="/">🤑</Link>
+      </div>
       <nav className={s.nav}>
         <ul>
           <li>

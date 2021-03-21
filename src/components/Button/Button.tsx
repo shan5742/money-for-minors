@@ -1,9 +1,9 @@
 import React from "react";
 import s from "./Button.module.scss";
 
-interface Props {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export const Button = ({ text, onClick }: Props) => {

@@ -3,11 +3,11 @@
 .root {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .content {
-  flex: 1;
+  flex-grow: 1;
   background-color: $blue;
   padding: 0 $x4 $x4 $x4;
 }

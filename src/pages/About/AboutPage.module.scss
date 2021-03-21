@@ -1,0 +1,62 @@
+@import "../../styles/global";
+
+.pageTitle {
+  @include font-scale("super", bold);
+  font-style: italic;
+  text-align: center;
+  padding: $x4 0;
+  margin: auto;
+
+  @media (max-width: 700px) {
+    @include font-scale("large", bold);
+  }
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contentHeading {
+  @include font-scale("large", bold);
+}
+
+.noteBlock {
+  background-color: $red;
+  padding: $x2 $x8;
+  margin: $x4 auto;
+  border: $border;
+  box-shadow: $shadow;
+
+  @media (max-width: 700px) {
+    padding: $x2;
+  }
+}
+
+.contentBlock {
+  background-color: $yellow;
+  padding: $x2 $x8;
+  margin: $x4 auto;
+  border: $border;
+  box-shadow: $shadow;
+
+  @media (max-width: 700px) {
+    padding: $x2;
+  }
+}
+
+.contentPara {
+  @include font-scale(base);
+}
+
+.noteLink {
+  text-decoration: underline;
+  @include font-scale(base, bold);
+  color: $yellow;
+}
+
+.aboutLink {
+  text-decoration: underline;
+  color: $red;
+  @include font-scale(base, bold);
+}

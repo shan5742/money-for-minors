@@ -15,6 +15,10 @@
   @media (max-width: 700px) {
     @include font-scale("super", bold);
   }
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .nav {
