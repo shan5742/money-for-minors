@@ -1,0 +1,44 @@
+//Size units
+
+$size-unit: 8px;
+$x1: $size-unit;
+$x2: $size-unit * 2;
+$x3: $size-unit * 3;
+$x4: $size-unit * 4;
+$x5: $size-unit * 5;
+$x6: $size-unit * 6;
+$x8: $size-unit * 8;
+
+$space-nano: $size-unit;
+$space-normal: $size-unit * 2;
+$space-large: $size-unit * 3;
+$space-mega: $size-unit * 4;
+$space-huge: $size-unit * 8;
+
+// Colours
+
+$white: #ffffff;
+$black: #222222;
+$green: #a3e636;
+$pink: #fda4af;
+$purple: #d8b4fe;
+$yellow: #ffc234;
+$orange: #ff9c00;
+$red: #ff434f;
+$light-green: #6fcaa8;
+$dark-green: #36ab80;
+$dark-purple: #382f78;
+$blue: #00c4d6;
+$cream: #f3eeee;
+$light-text-colour: #837e7e;
+$text-colour: #4e4646;
+$black-700: #403939;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
