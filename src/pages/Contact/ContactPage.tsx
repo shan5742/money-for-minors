@@ -25,7 +25,7 @@ export const ContactPage = (props: Props) => {
           data-netlify="true"
           action="/contact/?success=true"
         >
-          <input type="hidden" name="contact" value="contact" />
+          <input type="hidden" name="form-name" value="contact" />
           <div className={s.formRow}>
             <input
               className={s.input}
@@ -36,7 +36,7 @@ export const ContactPage = (props: Props) => {
             />
             <input
               className={s.input}
-              type="text"
+              type="email"
               id="email"
               name="email"
               placeholder="how can we reach ya"
