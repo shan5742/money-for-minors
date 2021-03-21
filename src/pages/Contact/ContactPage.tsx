@@ -23,7 +23,7 @@ export const ContactPage = (props: Props) => {
           name="contact"
           method="POST"
           data-netlify="true"
-          action="/contact/?success=true"
+          action="/thanks"
         >
           <input type="hidden" name="form-name" value="contact" />
           <div className={s.formRow}>

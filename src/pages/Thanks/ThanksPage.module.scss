@@ -1,0 +1,8 @@
+@import "../../styles/global.scss";
+
+.message {
+  @include font-scale("large", bold);
+  color: $yellow;
+  text-align: center;
+  padding: $space-huge;
+}
