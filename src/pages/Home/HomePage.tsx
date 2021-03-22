@@ -42,7 +42,7 @@ export const HomePage = (props: Props) => {
       </div>
 
       <div className={s.bottomButtonWrapper}>
-        <Button onClick={onSeeMore} text="CLICK FOR MOAR" />
+        <Button onClick={onSeeMore} text="More" />
       </div>
     </StandardLayout>
   );

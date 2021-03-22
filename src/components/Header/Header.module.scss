@@ -10,10 +10,10 @@
 }
 
 .logo {
-  @include font-scale("crazy", bold);
+  @include font-scale("super", bold);
 
   @media (max-width: 700px) {
-    @include font-scale("super", bold);
+    @include font-scale("large", bold);
   }
 
   a {
